@@ -23,7 +23,7 @@ body {
 }
 
 .bg-wrapper {
-    background-image: url("graphicdesign1.png");
+    background-image: url("images/bg_graphic_design.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
