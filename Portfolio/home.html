@@ -7,47 +7,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="photo.css">
 </head>
 <body>
     <!-- Wrapper with Background Image -->
     <div class="bg-wrapper">
         <!-- First Container -->
-        <div id="container1" class="container1">
-            <img src="vaishnavi (3).png" class="namelogo" alt="Logo">
+        <div id="header" class="container1">
+            <img src="images\namelogo.png" class="namelogo" alt="Logo">
             <div class="button-group">
-                <button type="button" class="btn btn-outline-light">About Me</button>
-                <button type="button" class="btn btn-outline-light">Skills</button>
-                <button type="button" class="btn btn-outline-light">Projects</button>
-                <button type="button" class="btn btn-outline-light">Contacts</button>
+                <button class="btn btn-outline-light" onclick="location.href='#aboutme'">About Me</button>
+                <button class="btn btn-outline-light" onclick="location.href='#skills'">Skills</button>
+                <button class="btn btn-outline-light" onclick="location.href='#projects'">Projects</button>
+                <button class="btn btn-outline-light" onclick="location.href='#contacts'">contacts</button>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 style="font-family: monospace; margin-right: 990px; margin-top: 90px; margin-bottom: 0;width:250px;">Hello! I'm</h1>
+                        <div class="headercontent">
+                        <h1 style="font-family: monospace; margin-right: 990px; margin-top: 120px; margin-bottom: 0;width:250px;">Hello! I'm</h1>
                         <h3 class="animate-charcter">Vaishnavi.</h3>
                         <h1 style="font-family: monospace; margin-left: 100px; margin-top: 0px; margin-bottom: 0; width: 390px;">Nice to meet you!</h1>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Second Container -->
-        <div id="aboutme" class="container2">
-            <h2>About</h2>
-            <p>This is the second container.</p>
-        </div>
+        <div class="container2" id="aboutme">
+            
+            <div class="image">
+              <img src="Dark Academia.jpeg" class="img" alt="Me">
+              <div class="text-overlay">
+                <div class="waviy" style="margin-left: 400px;">
+                    <span style="--i:1;">A</span>
+                    <span style="--i:2">b</span>
+                    <span style="--i:3">o</span>
+                    <span style="--i:4">u</span>
+                    <span style="--i:5">t</span>
+                    <span style="--i:6">M</span>
+                    <span style="--i:7">e</span>
+                   </div>
+                <h5 style="border: white 2px solid;width: 200px;">hi im vaishnavi nice to meet you. i'm very helpful and i love to learn new things.</h5>
+            </div>
+            </div>
+          </div>
     </div>
 
     <!-- Third Container -->
-    <div id="pictures" class="container3">
+    <div id="skills" class="container3">
         <h2>Pictures</h2>
         <p>This is the third container.</p>
     </div>
 
     <!-- Fourth Container -->
-    <div id="contacts" class="container4">
-        <h2>Contacts</h2>
-        <p>This is the fourth container.</p>
+    <div  id="projects" class="container5">
+        <div class="a01 divproj">PROJECTS</div>
+        <div class="a02 divproj">PROJECTS</div>
+        <div class="a03 divproj">PROJECTS</div>
+        <div class="a04 divproj">PROJECTS</div>
+
+        <div class="a01 s1 divproj">PROJECTS</div>
+        <div class="a02 s1 divproj">PROJECTS</div>
+        <div class="a03 s1 divproj">PROJECTS</div>
+        <div class="a04 s1 divproj">PROJECTS</div>
+
+        <div class="a01 s2 divproj">PROJECTS</div>
+        <div class="a02 s2 divproj">PROJECTS</div>
+        <div class="a03 s2 divproj">PROJECTS</div>
+        <div class="a03 s2 divproj">PROJECTS</div>
+
+        <div class="a01 s3 divproj">PROJECTS</div>
+        <div class="a02 s3 divproj">PROJECTS</div>
+        <div class="a03 s3 divproj">PROJECTS</div>
+
+      </div>
+
+      <div id="contacts" class="container5">
+        <h2>Pictures</h2>
+        <p>This is the third container.</p>
     </div>
 </body>
 </html>

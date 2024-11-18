@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .containerpht{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5)
+  }
+  
+  .image {
+    perspective: 3000px;
+    height: fit-content;
+    position: relative; /* Changed absolute to relative for cleaner layout */
+    margin-left: 200px;
+    border: white 1px solid;
+    width: fit-content;
+    margin-top: 40px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.6s ease; /* Smoothened the transition */
+    transform-style: preserve-3d;
+    height: 550px;
+
+  }
+  
+  .image:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  
+  .image .text-overlay {
+    position: absolute;
+    top: 60%; /* Adjust this to control vertical positioning */
+    left: 100%; /* Adjust this to control horizontal positioning */
+    transform: translate(-50%, -40%);
+    color: rgba(255, 255, 255, 0.674);
+    font-size: 24px;
+    text-align: right;
+    pointer-events: none; /* So hover effects on the image still work */
+    width: 120%; /* Allow text to extend beyond the image */
+    margin-left: 20px;
+  }
+
+  
+  .waviy {
+    position: relative;
+    margin-left: 75%;
+    margin-top: -40%;
+    border: white 1px solid;
+    width: 240px;
+  }
+
+
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    font-family: monospace;
+    color:rgba(255, 255, 255, 0.674);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
