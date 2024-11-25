@@ -19,7 +19,6 @@
     height: fit-content;
     position: relative; /* Changed absolute to relative for cleaner layout */
     margin-left: 200px;
-    border: white 1px solid;
     width: fit-content;
     margin-top: 40px;
   }
@@ -41,15 +40,15 @@
   
   .image .text-overlay {
     position: absolute;
-    top: 60%; /* Adjust this to control vertical positioning */
+    top: 70%; /* Adjust this to control vertical positioning */
     left: 100%; /* Adjust this to control horizontal positioning */
     transform: translate(-50%, -40%);
-    color: rgba(255, 255, 255, 0.674);
+    color: rgba(238, 238, 238, 0.674);
     font-size: 24px;
-    text-align: right;
+    text-align: left;
     pointer-events: none; /* So hover effects on the image still work */
     width: 120%; /* Allow text to extend beyond the image */
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   
@@ -57,17 +56,16 @@
     position: relative;
     margin-left: 75%;
     margin-top: -40%;
-    border: white 1px solid;
-    width: 240px;
+    width: 300px;
   }
 
 
   .waviy span {
     position: relative;
     display: inline-block;
-    font-size: 50px;
+    font-size: 60px;
     font-family: monospace;
-    color:rgba(255, 255, 255, 0.674);
+    color:rgba(216, 216, 216, 0.674);
     text-transform: uppercase;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
